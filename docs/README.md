@@ -8,16 +8,16 @@
 
 ### Equipe
 
-- **Luiz Matheus**
-- **Wanderson Soares**
+- **LUIZ MATHEUS SILVA CARVALHO - 515145**
+- **WANDERSON SOARES DA SILVA - 538348**
 
 ---
 
 ## 2. Trilha
 
-**Trilha:** A definir.
+**Trilha:** Pensando.
 
-**Área temática:** A definir.
+**Área temática:** ...............
 
 A escolha da trilha e da área temática será realizada após a definição do problema e do público externo que serão atendidos pela ação.
 
@@ -25,7 +25,7 @@ A escolha da trilha e da área temática será realizada após a definição do 
 
 ## 3. Problema
 
-**Problema identificado:** A definir.
+**Problema identificado:** pensando.
 
 A equipe irá identificar uma dificuldade real enfrentada por um público externo e delimitar o problema de forma concreta, considerando quem possui essa dificuldade e em qual contexto ela ocorre.
 
