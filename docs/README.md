@@ -162,20 +162,11 @@ A equipe registrará no diário do projeto os conhecimentos adquiridos, dificuld
 
 ## 10. Evidências
 
-As evidências da ação serão armazenadas no diretório [`evidencias/`](../evidencias/), incluindo:
-
-- Registros de testes;
-- Retorno dos usuários;
-- Capturas de tela, quando necessário;
-- Histórico do desenvolvimento;
-- Versões do produto;
-- Endereço público do produto;
-- Outros registros relevantes da execução.
 
 ---
 
 ## 11. Status
 
-🟡 **Em definição de tema e produto.**
+ **Ainda tenho que decidir o tema.**
 
 O plano será atualizado após a definição do problema, público externo, trilha, fontes de dados e produto mínimo.
