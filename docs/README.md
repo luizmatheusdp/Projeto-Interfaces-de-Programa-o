@@ -15,47 +15,51 @@
 
 ## 2. Trilha
 
-**Trilha:** Pensando.
+**Trilha:** A — API pública de dados abertos
 
-**Área temática:** ...............
+**Área temática:** Tecnologia e Produção
 
-A escolha da trilha e da área temática será realizada após a definição do problema e do público externo que serão atendidos pela ação.
+A ação pretende facilitar o acesso e o uso de dados públicos sobre municípios do Ceará, disponibilizando uma API simples e documentada para consulta dessas informações por pessoas externas à universidade.
 
 ---
 
 ## 3. Problema
 
-**Problema identificado:** pensando.
+**Problema identificado:** dificuldade para consultar e reutilizar informações públicas sobre municípios do Ceará.
 
-A equipe irá identificar uma dificuldade real enfrentada por um público externo e delimitar o problema de forma concreta, considerando quem possui essa dificuldade e em qual contexto ela ocorre.
+Pessoas que precisam consultar informações sobre municípios cearenses precisam localizar os dados diretamente nas fontes do IBGE e compreender a estrutura dos dados e dos serviços disponíveis.
+
+Para pessoas que não trabalham diretamente com programação ou com bases de dados, esse processo pode dificultar o acesso e o reúso das informações.
+
+A equipe pretende reduzir essa dificuldade disponibilizando uma interface simples para consulta dos dados municipais.
 
 ---
 
 ## 4. Público externo
 
-**Público:** A definir.
+**Público:** Professores e estudantes da educação básica que utilizem informações sobre municípios do Ceará.
 
-O público será definido de forma concreta, identificando quem utilizará o produto desenvolvido pela equipe.
+Como público secundário, o produto poderá ser utilizado por:
+
+- Jornalistas e produtores de conteúdo;
+- Organizações e coletivos que utilizem dados públicos;
+- Pessoas que necessitem consultar informações básicas sobre municípios cearenses.
+
+Durante a execução da ação, a equipe buscará realizar testes com pelo menos **3 pessoas externas à UFC**, registrando os resultados e as dificuldades encontradas durante a utilização do produto.
 
 ---
 
 ## 5. Produto
 
-**Produto:** A definir.
+**Produto:** API pública para consulta de dados dos municípios do Ceará.
 
-O produto será pequeno, verificável e desenvolvido para resolver parte do problema identificado.
+A API utilizará dados públicos do **Instituto Brasileiro de Geografia e Estatística (IBGE)** e permitirá consultar informações de um município a partir de seu código IBGE.
 
-A primeira versão deverá estar disponível no **Marco 1**, permitindo demonstrar a funcionalidade principal do produto.
+### Produto mínimo
 
-### O produto não incluirá inicialmente
+A primeira versão deverá possuir pelo menos uma rota funcional:
 
-- Funcionalidades que não sejam necessárias para resolver o problema principal;
-- Integrações desnecessárias;
-- Funcionalidades que aumentem significativamente o escopo do projeto.
 
-Novas funcionalidades somente serão consideradas após a implementação do produto mínimo.
-
----
 
 ## 6. Fontes de dados
 
