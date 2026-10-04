@@ -25,7 +25,7 @@ Presença obrigatória nos três. **Marco perdido não se repõe com entrega por
 
 - **Equipe:** Luiz Matheus Silva Carvalho — 515145; Wanderson Soares da Silva — 538348
 - **Marco e data:** Marco 1 — 04/10/2026
-- **Trilha:** A — API pública de dados abertos
+- **Trilha:** A - API sobre municípios do Ceará com dados do IBGE:
 - **Endereço público do produto:** n.a. — publicação pública prevista para o Marco 3
 - **Commit ou tag desta entrega:** a definir após o commit final do Marco 1
 
