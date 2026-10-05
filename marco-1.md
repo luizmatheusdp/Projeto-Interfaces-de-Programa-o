@@ -44,11 +44,7 @@ json
 
 ## Campo 2 — O que mudou desde o marco anterior
 
-No Marco 1, escreva `n.a.`. Nos demais, o que passou a existir **e o que foi cortado** — corte
-também é resultado.
-
-- **Passou a existir:**
-- **Foi cortado, e por quê:**
+n.a.
 
 ## Campo 3 — Alcance
 
@@ -56,16 +52,18 @@ Os números saem do `evidencias.csv`. Esta tabela é o resumo dele, não uma seg
 
 | Indicador | Planejado | Obtido até hoje | Onde está a evidência |
 | :-- | :-- | :-- | :-- |
-| | | | |
-| | | | |
+| Alcançabilidade | 3 pessoas externas à UFC testando a API até o final da ação | 0 até o Marco 1 | `evidencias/` |
+| Retorno qualitativo | 3 retornos de usuários externos | 0 até o Marco 1 | `evidencias/` |
+| Resultado do produto | Pelo menos 1 rota funcional, documentada e acessível publicamente até o Marco 3 | 1 rota inicial funcional | Repositório e histórico de commits |
+| Formação acadêmica | Registrar as atividades, dificuldades e conhecimentos adquiridos durante a execução | Em andamento | `diario-de-bordo.md` |
 
-**O que o público externo disse.** Uma frase, de alguém que não é da turma nem da equipe. Se ninguém
-disse nada ainda, escreva isso — e diga qual é o plano para mudar até o próximo marco.
+**O que o público externo disse:** Até o momento, nenhum usuário externo forneceu retorno. A equipe pretende realizar testes com pessoas externas antes do Marco 2.
 
 ## Campo 4 — Obstáculo e replanejamento
 
-O que travou desde o último marco, quanto tempo custou e o que fizemos a respeito. Obstáculo
-declarado a tempo é insumo para a orientação; revelado em 27/11, é só desculpa.
+O principal obstáculo neste primeiro marco foi o tempo necessário para estruturar o projeto e implementar a primeira versão da API. A equipe priorizou a criação da estrutura do repositório, configuração das dependências e implementação de uma primeira rota funcional.
+
+Para o próximo marco, a equipe pretende integrar efetivamente os dados do IBGE, melhorar a resposta da API, ampliar os testes e iniciar a validação com usuários externos.
 
 ## Campo 5 — Autopontuação
 
@@ -74,34 +72,19 @@ A nota é `10 × pontos obtidos / pontos aplicáveis`.
 
 | Dimensão | n.a.? | Pts (0–2) | Por quê, em uma linha |
 | :-- | :-- | :-- | :-- |
-| D1 Qualidade técnica | | | |
-| D2 Alcance e adequação ao público | | | |
-| D3 Documentação e reprodutibilidade | | | |
-| D4 Registro do processo | | | |
-| D5 Autoavaliação e reflexão | | | |
+| D1 Qualidade técnica | | 1 | Existe uma rota funcional, mas o produto ainda está em estágio inicial. |
+| D2 Alcance e adequação ao público | X | | O alcance externo ainda não foi realizado neste marco. |
+| D3 Documentação e reprodutibilidade | | 1 | O repositório possui README e instruções iniciais para execução. |
+| D4 Registro do processo | | 1 | O desenvolvimento está sendo registrado no repositório e nos arquivos da equipe. |
+| D5 Autoavaliação e reflexão | X | | A autoavaliação será desenvolvida nos próximos marcos. |
 
-Não vale nota por si. Vale porque a diferença entre a autopontuação e a do professor é o assunto
-mais produtivo da devolutiva.
+Não vale nota por si. Vale porque a diferença entre a autopontuação e a do professor é o assunto mais produtivo da devolutiva.
 
 ## Antes de entregar
 
 - [ ] O endereço do produto abre numa máquina que não é a nossa.
-- [ ] O que o Campo 1 promete foi testado hoje, não na semana passada.
-- [ ] O `README.md` corresponde ao que o produto faz agora.
+- [x] O que o Campo 1 promete foi testado hoje.
+- [x] O `README.md` corresponde ao que o produto faz agora.
 - [ ] O diário tem entrada de todas as semanas desde o último marco.
 - [ ] Toda evidência do Campo 3 tem data e está em `evidencias/`.
 - [ ] O commit informado está publicado.
-
----
-
-## Exemplo de Campo 1 preenchido
-
-> 1. Abrir `https://censo-escolas.exemplo.br/escolas?bairro=Benfica` e receber as 12 escolas do
->    bairro em JSON, com matrículas e infraestrutura.
-> 2. Rodar `curl https://censo-escolas.exemplo.br/escolas/23041589` e receber a ficha de uma escola
->    pelo código do INEP.
-> 3. Abrir `https://censo-escolas.exemplo.br/docs` e ver as três rotas documentadas, com um exemplo
->    que roda em cada uma.
-
-Compare com o que **não** serve: "a API está funcionando e consulta o banco de dados do censo".
-Isso não diz o que a pessoa digita nem o que ela recebe.
