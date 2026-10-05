@@ -40,10 +40,7 @@ avaliado.
 2. Fazer uma requisição para a rota de municípios informando o código `2304400` e receber como resposta:
 
 json
-{
-  "codigo": "2304400",
-  "mensagem": "Consulta de município"
-}
+{"codigo":2304400,"nome":"Fortaleza","microrregiao":"CE"}
 
 ## Campo 2 — O que mudou desde o marco anterior
 
