@@ -63,5 +63,3 @@ Como cada parte da estrutura funciona:
 ├── .gitignore
 └── marco-1.md
 
-## Estrutura do projeto
-
