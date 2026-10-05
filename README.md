@@ -50,3 +50,18 @@ GET /municipios/{codigo}
 ├── requirements.txt
 ├── .gitignore
 └── marco-1.md
+
+## Estrutura do projeto
+
+Cada parte do repositório possui uma finalidade específica:
+
+- `src/main.py` → contém a implementação da API de consulta dos municípios do Ceará.
+- `tests/test_municipios.py` → contém os testes automatizados para verificar o funcionamento da API.
+- `dados/README.md` → apresenta informações sobre as fontes de dados utilizadas, incluindo os dados disponibilizados pelo IBGE.
+- `evidencias/` → armazena as evidências relacionadas à execução e aos resultados da ação de extensão.
+- `docs/plano-de-acao.md` → contém o plano de ação da equipe, com o problema, público, produto, cronograma, papéis e indicadores.
+- `README.md` → apresenta o projeto e explica como instalar, executar e utilizar a API.
+- `marco-1.md` → contém a ficha de entrega e autopontuação do Marco 1.
+- `requirements.txt` → lista as dependências necessárias para instalar e executar o projeto.
+
+
