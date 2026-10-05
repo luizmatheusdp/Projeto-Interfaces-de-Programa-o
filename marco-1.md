@@ -44,7 +44,7 @@ json
 
 ## Campo 2 — O que mudou desde o marco anterior
 
-n.a.
+Está é o primeiro marco
 
 ## Campo 3 — Alcance
 
@@ -52,8 +52,8 @@ Os números saem do `evidencias.csv`. Esta tabela é o resumo dele, não uma seg
 
 | Indicador | Planejado | Obtido até hoje | Onde está a evidência |
 | :-- | :-- | :-- | :-- |
-| Alcançabilidade | 3 pessoas externas à UFC testando a API até o final da ação | 0 até o Marco 1 | `evidencias/` |
-| Retorno qualitativo | 3 retornos de usuários externos | 0 até o Marco 1 | `evidencias/` |
+| Alcançabilidade | 3 pessoas externas à UFC testando a API até o final da ação | 0 até o Marco 1 | http://127.0.0.1:8000/municipios/2304400 |
+| Retorno qualitativo | 3 retornos de usuários externos | 0 até o Marco 1 | http://127.0.0.1:8000/municipios/2304400 |
 | Resultado do produto | Pelo menos 1 rota funcional, documentada e acessível publicamente até o Marco 3 | 1 rota inicial funcional | Repositório e histórico de commits |
 | Formação acadêmica | Registrar as atividades, dificuldades e conhecimentos adquiridos durante a execução | Em andamento | `diario-de-bordo.md` |
 
@@ -61,7 +61,7 @@ Os números saem do `evidencias.csv`. Esta tabela é o resumo dele, não uma seg
 
 ## Campo 4 — Obstáculo e replanejamento
 
-O principal obstáculo neste primeiro marco foi o tempo necessário para estruturar o projeto e implementar a primeira versão da API. A equipe priorizou a criação da estrutura do repositório, configuração das dependências e implementação de uma primeira rota funcional.
+O principal obstáculo no primeiro marco foi o tempo para estruturar o projeto e implementar a primeira versão da API.
 
 Para o próximo marco, a equipe pretende integrar efetivamente os dados do IBGE, melhorar a resposta da API, ampliar os testes e iniciar a validação com usuários externos.
 
