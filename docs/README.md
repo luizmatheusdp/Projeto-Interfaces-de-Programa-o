@@ -59,21 +59,32 @@ A API utilizará dados públicos do **Instituto Brasileiro de Geografia e Estat�
 
 A primeira versão deverá possuir pelo menos uma rota funcional:
 
+Exemplo:
+
+`GET /municipios/2304400`
+
+A resposta deverá ser disponibilizada em formato JSON contendo o código do município e informações municipais disponíveis na fonte utilizada.
+
+A equipe pretende posteriormente incluir informações como população e outros indicadores municipais selecionados.
+
 
 
 ## 6. Fontes de dados
 
-As fontes de dados serão definidas após a escolha do problema e do produto.
+A principal fonte de dados será o Instituto Brasileiro de Geografia e Estatística (IBGE), utilizando seus serviços e bases públicas relacionados aos municípios brasileiros.
 
-Para cada fonte utilizada serão registrados:
+Para a fonte utilizada serão registrados:
 
-- Nome da fonte;
-- Órgão responsável;
-- Endereço de acesso;
-- Licença;
-- Data ou periodicidade de atualização;
+- Nome da fonte: Instituto Brasileiro de Geografia e Estatística (IBGE);
+- Órgão responsável: IBGE;
+- Endereço de acesso: documentação e serviço de dados do IBGE;
+- Licença ou termos de uso;
+- Data e periodicidade de atualização, quando disponíveis;
 - Existência de dados pessoais;
 - Forma como os dados serão utilizados no produto.
+
+A equipe priorizará dados agregados sobre municípios e não utilizará dados pessoais identificáveis.
+
 
 ---
 
@@ -166,11 +177,26 @@ A equipe registrará no diário do projeto os conhecimentos adquiridos, dificuld
 
 ## 10. Evidências
 
+Serão utilizadas como evidências da ação:
+
+- histórico de commits do repositório;
+- diário de bordo;
+- documentação da API;
+- registros dos testes realizados;
+- registros de contato com usuários externos;
+- retornos recebidos dos usuários;
+- arquivo `evidencias.csv`;
+- endereço público da API, quando publicado no Marco 3.
 
 ---
 
 ## 11. Status
 
- **Ainda tenho que decidir o tema.**
+Em desenvolvimento — Marco 1.
+
+O tema, a trilha, o público externo e o produto mínimo foram definidos. A equipe está desenvolvendo a primeira versão da API, os testes e as evidências da ação.
+
+O próximo passo é integrar os dados do IBGE à API e realizar testes com usuários externos antes do Marco 2.
+
 
 O plano será atualizado após a definição do problema, público externo, trilha, fontes de dados e produto mínimo.
