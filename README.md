@@ -43,6 +43,20 @@ Como cada parte da estrutura funciona:
 - `requirements.txt` → lista as dependências necessárias para instalar e executar o projeto.
 
 
+# API de Municípios do Ceará
+
+API para consulta de informações sobre municípios do Ceará utilizando dados públicos do IBGE.
+
+## Como executar
+
+### 1. Instalar as dependências
+
+No terminal, na pasta do projeto:
+
+```bash pip install -r requirements.txt
+
+
+
 ## 📁 Estrutura do repositório
 
 ```text
