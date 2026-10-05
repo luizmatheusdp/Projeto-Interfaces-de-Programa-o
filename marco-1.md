@@ -35,12 +35,15 @@ avaliado.
 
 ## Campo 1 — O que funciona hoje
 
-Três coisas que uma pessoa de fora consegue fazer agora, cada uma com o comando, a URL ou o caminho
-exato. Não escreva capacidades; escreva o que se digita e o que sai.
+1. Executar a API localmente seguindo as instruções do `README.md` e acessar a rota de consulta de municípios, recebendo uma resposta em formato JSON.
 
-1.
-2.
-3.
+2. Fazer uma requisição para a rota de municípios informando o código `2304400` e receber como resposta:
+
+json
+{
+  "codigo": "2304400",
+  "mensagem": "Consulta de município"
+}
 
 ## Campo 2 — O que mudou desde o marco anterior
 
