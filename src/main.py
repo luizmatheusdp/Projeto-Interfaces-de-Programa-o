@@ -4,7 +4,7 @@ from fastapi import FastAPI, HTTPException
 app = FastAPI(
     title="API de Municípios do Ceará",
     description="API para consulta de dados públicos de municípios do Ceará.",
-    version="0.1.0",
+    version="0.2.0",
 )
 
 
@@ -28,12 +28,6 @@ def consultar_municipio(codigo: str):
             detail="Não foi possível consultar o serviço do IBGE."
         )
 
-    if resposta.status_code == 404:
-        raise HTTPException(
-            status_code=404,
-            detail="Município não encontrado."
-        )
-
     if resposta.status_code != 200:
         raise HTTPException(
             status_code=502,
@@ -42,8 +36,22 @@ def consultar_municipio(codigo: str):
 
     dados = resposta.json()
 
+    if not isinstance(dados, dict) or "id" not in dados:
+        raise HTTPException(
+            status_code=404,
+            detail="Município não encontrado."
+        )
+
+    uf = dados["microrregiao"]["mesorregiao"]["UF"]
+
     return {
         "codigo": dados["id"],
         "nome": dados["nome"],
-        "microrregiao": dados["microrregiao"]["mesorregiao"]["UF"]["sigla"]
+        "microrregiao": dados["microrregiao"]["nome"],
+        "mesorregiao": dados["microrregiao"]["mesorregiao"]["nome"],
+        "regiao_imediata": dados["regiao-imediata"]["nome"],
+        "regiao_intermediaria": dados["regiao-imediata"]["regiao-intermediaria"]["nome"],
+        "uf": uf["sigla"],
+        "uf_nome": uf["nome"],
+        "regiao": uf["regiao"]["nome"]
     }
