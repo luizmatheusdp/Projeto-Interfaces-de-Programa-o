@@ -28,10 +28,65 @@ A primeira versão terá como objetivo disponibilizar uma rota funcional, utiliz
 
 Exemplo de rota:
 
-http
+```
 GET /municipios/{codigo}
+```
 
-Como cada parte da estrutura funciona:
+## 🚀 Como instalar e executar
+
+Recomenda-se usar um ambiente virtual:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Linux/macOS
+.venv\Scripts\activate      # Windows
+```
+
+Instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+Execute a API (http://127.0.0.1:8000):
+
+```bash
+uvicorn src.main:app --reload
+```
+
+Documentação interativa disponível em http://127.0.0.1:8000/docs.
+
+## 📡 Exemplo de chamada
+
+```bash
+curl http://127.0.0.1:8000/municipios/2304400
+```
+
+Resposta:
+
+```json
+{
+  "codigo": 2304400,
+  "nome": "Fortaleza",
+  "microrregiao": "Fortaleza",
+  "mesorregiao": "Metropolitana de Fortaleza",
+  "regiao_imediata": "Fortaleza",
+  "regiao_intermediaria": "Fortaleza",
+  "uf": "CE",
+  "uf_nome": "Ceará",
+  "regiao": "Nordeste"
+}
+```
+
+## 📚 Fonte de dados e licença
+
+Os dados são fornecidos pela **API de Localidades do IBGE** (Instituto Brasileiro de Geografia e Estatística):
+
+- Fonte: https://servicodados.ibge.gov.br/api/docs/localidades
+- Os dados do IBGE podem ser usados livremente, desde que citada a fonte (CC BY 2.5 BR).
+  Mais informações: https://www.ibge.gov.br/acesso-informacao/institucional/termo-de-uso.html
+
+## 📝 Como cada parte da estrutura funciona
 
 - `src/main.py` → contém a implementação da API de consulta dos municípios do Ceará.
 - `testes/test_municipios.py` → contém os testes automatizados para verificar o funcionamento da API.
