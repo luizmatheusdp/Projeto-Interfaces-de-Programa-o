@@ -84,7 +84,7 @@ Os dados são fornecidos pela **API de Localidades do IBGE** (Instituto Brasilei
 
 - Fonte: https://servicodados.ibge.gov.br/api/docs/localidades
 - Os dados do IBGE podem ser usados livremente, desde que citada a fonte (CC BY 2.5 BR).
-  Mais informações: https://www.ibge.gov.br/acesso-informacao/institucional/termo-de-uso.html
+  Mais informações: https://www.ibge.gov.br/acesso-informacao/acoes-e-programas/termos-de-uso.html
 
 ## ⚠️ Limitações
 
