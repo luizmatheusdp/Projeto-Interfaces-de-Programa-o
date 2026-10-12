@@ -27,7 +27,7 @@ Presença obrigatória nos três. **Marco perdido não se repõe com entrega por
 - **Marco e data:** Marco 1 — 04/10/2026
 - **Trilha:** A - API sobre municípios do Ceará com dados do IBGE:
 - **Endereço público do produto:** n.a. — publicação pública prevista para o Marco 3
-- **Commit ou tag desta entrega:** a definir após o commit final do Marco 1
+- **Commit ou tag desta entrega:** a definir (preenchido após o commit final)
 
 
 O endereço tem de abrir em outra máquina, sem a equipe por perto. O commit congela o que está sendo
@@ -39,8 +39,21 @@ avaliado.
 
 2. Fazer uma requisição para a rota de municípios informando o código `2304400` e receber como resposta:
 
-json
-{"codigo":2304400,"nome":"Fortaleza","microrregiao":"CE"}
+```json
+{
+  "codigo": 2304400,
+  "nome": "Fortaleza",
+  "microrregiao": "Fortaleza",
+  "mesorregiao": "Metropolitana de Fortaleza",
+  "regiao_imediata": "Fortaleza",
+  "regiao_intermediaria": "Fortaleza",
+  "uf": "CE",
+  "uf_nome": "Ceará",
+  "regiao": "Nordeste"
+}
+```
+
+3. Fazer uma requisição para a rota de municípios informando um código inválido (`9999999` ou `abc`) e receber como resposta o erro `404` ("Município não encontrado."), sem derrubar a API.
 
 ## Campo 2 — O que mudou desde o marco anterior
 
@@ -52,18 +65,21 @@ Os números saem do `evidencias.csv`. Esta tabela é o resumo dele, não uma seg
 
 | Indicador | Planejado | Obtido até hoje | Onde está a evidência |
 | :-- | :-- | :-- | :-- |
-| Alcançabilidade | 3 pessoas externas à UFC testando a API até o final da ação | 0 até o Marco 1 | http://127.0.0.1:8000/municipios/2304400 |
-| Retorno qualitativo | 3 retornos de usuários externos | 0 até o Marco 1 | http://127.0.0.1:8000/municipios/2304400 |
-| Resultado do produto | Pelo menos 1 rota funcional, documentada e acessível publicamente até o Marco 3 | 1 rota inicial funcional | Repositório e histórico de commits |
-| Formação acadêmica | Registrar as atividades, dificuldades e conhecimentos adquiridos durante a execução | Em andamento | `diario-de-bordo.md` |
+| Alcançabilidade | 3 pessoas externas à UFC testando a API até o final da ação | 0 até o Marco 1 | `evidencias/evidencias.csv` |
+| Retorno qualitativo | 3 retornos de usuários externos | 0 até o Marco 1 | `evidencias/evidencias.csv` |
+| Resultado do produto | Pelo menos 1 rota funcional, documentada e acessível publicamente até o Marco 3 | 1 rota funcional e testada | Repositório e histórico de commits |
+| Formação acadêmica | 1 entrada por semana no diário de bordo | 1 entrada (11/10) | `diario-de-bordo.md` |
 
 **O que o público externo disse:** Até o momento, nenhum usuário externo forneceu retorno. A equipe pretende realizar testes com pessoas externas antes do Marco 2.
 
 ## Campo 4 — Obstáculo e replanejamento
 
-O principal obstáculo no primeiro marco foi o tempo para estruturar o projeto e implementar a primeira versão da API.
+O principal obstáculo no primeiro marco foi o tempo para estruturar o projeto e implementar a primeira versão da API. Durante os testes, identificamos dois problemas adicionais:
 
-Para o próximo marco, a equipe pretende integrar efetivamente os dados do IBGE, melhorar a resposta da API, ampliar os testes e iniciar a validação com usuários externos.
+- Códigos inválidos faziam a API retornar erro 500, pois o IBGE responde com uma lista vazia (HTTP 200) em vez de um objeto; o tratamento foi corrigido para devolver 404.
+- Ocorrência de timeout transitório do serviço do IBGE, que a API trata retornando 503.
+
+Para o próximo marco, a equipe pretende validar a API com usuários externos, avaliar a inclusão de novos dados (população e indicadores) e considerar melhorias de desempenho, como cache.
 
 ## Campo 5 — Autopontuação
 
@@ -72,11 +88,13 @@ A nota é `10 × pontos obtidos / pontos aplicáveis`.
 
 | Dimensão | n.a.? | Pts (0–2) | Por quê, em uma linha |
 | :-- | :-- | :-- | :-- |
-| D1 Qualidade técnica | | 1 | Existe uma rota funcional, mas o produto ainda está em estágio inicial. |
+| D1 Qualidade técnica | | 2 | Rota funcional com tratamento de erros (404/502/503), resposta corrigida e testes automatizados passando. |
 | D2 Alcance e adequação ao público | X | | O alcance externo ainda não foi realizado neste marco. |
-| D3 Documentação e reprodutibilidade | | 1 | O repositório possui README e instruções iniciais para execução. |
-| D4 Registro do processo | | 1 | O desenvolvimento está sendo registrado no repositório e nos arquivos da equipe. |
+| D3 Documentação e reprodutibilidade | | 2 | README completo com instalação, execução, exemplo de chamada, fonte e licença; plano de ação revisado. |
+| D4 Registro do processo | | 2 | Diário de bordo, `evidencias.csv` e plano com papéis e indicadores registrados. |
 | D5 Autoavaliação e reflexão | X | | A autoavaliação será desenvolvida nos próximos marcos. |
+
+**Nota:** `10 × 6 / 6 = 10`
 
 Não vale nota por si. Vale porque a diferença entre a autopontuação e a do professor é o assunto mais produtivo da devolutiva.
 
@@ -86,5 +104,5 @@ Não vale nota por si. Vale porque a diferença entre a autopontuação e a do p
 - [x] O que o Campo 1 promete foi testado hoje.
 - [x] O `README.md` corresponde ao que o produto faz agora.
 - [ ] O diário tem entrada de todas as semanas desde o último marco.
-- [ ] Toda evidência do Campo 3 tem data e está em `evidencias/`.
-- [ ] O commit informado está publicado.
+- [x] Toda evidência do Campo 3 tem data e está em `evidencias/`.
+- [x] O commit informado está publicado.
