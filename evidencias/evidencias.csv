@@ -1,0 +1,6 @@
+data,indicador,descricao,onde_esta_a_evidencia
+2026-10-11,Formação acadêmica,Correção da API: código inválido retorna 404 e correção do campo microrregiao,src/main.py
+2026-10-11,Formação acadêmica,Adição de novos campos na resposta da rota /municipios/{codigo} (mesorregiao, regiao_imediata, regiao_intermediaria, uf, uf_nome),src/main.py
+2026-10-11,Formação acadêmica,Testes automatizados: Fortaleza (2304400) retorna 200 e código inválido retorna 404,testes/test_municipios.py
+2026-10-11,Formação acadêmica,Atualização do README com instalação, execução, exemplo de chamada, fonte e licença do IBGE,README.md
+2026-10-11,Formação acadêmica,Validação dos códigos 2304400, 3304557 e 2927408 contra a API real do IBGE,diario-de-bordo.md
