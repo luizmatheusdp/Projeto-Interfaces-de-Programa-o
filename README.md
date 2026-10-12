@@ -86,13 +86,22 @@ Os dados são fornecidos pela **API de Localidades do IBGE** (Instituto Brasilei
 - Os dados do IBGE podem ser usados livremente, desde que citada a fonte (CC BY 2.5 BR).
   Mais informações: https://www.ibge.gov.br/acesso-informacao/institucional/termo-de-uso.html
 
+## ⚠️ Limitações
+
+- A API depende do serviço online do IBGE: se ele estiver indisponível, a API responde com erro **503**.
+- Aceita apenas consulta de **um município por vez**, pelo código IBGE de 7 dígitos. Não há busca por nome nem listagem dos municípios.
+- Retorna somente dados de localização (nome, microrregião, mesorregião, regiões e UF). Ainda **não** inclui população nem indicadores socioeconômicos.
+- Não há cache: cada requisição consulta o IBGE novamente, o que pode tornar respostas repetidas mais lentas.
+- Em caso de falha inesperada do serviço do IBGE, a resposta pode ser **502**.
+
 ## 📝 Como cada parte da estrutura funciona
 
 - `src/main.py` → contém a implementação da API de consulta dos municípios do Ceará.
 - `testes/test_municipios.py` → contém os testes automatizados para verificar o funcionamento da API.
 - `dados/README.md` → apresenta informações sobre as fontes de dados utilizadas, incluindo os dados disponibilizados pelo IBGE.
-- `evidencias/` → armazena as evidências relacionadas à execução e aos resultados da ação de extensão.
+- `evidencias/` → armazena as evidências relacionadas à execução e aos resultados da ação de extensão (`evidencias.csv`).
 - `docs/plano-de-acao.md` → contém o plano de ação da equipe, com o problema, público, produto, cronograma, papéis e indicadores.
+- `diario-de-bordo.md` → registra semanalmente as atividades, dificuldades e conhecimentos da equipe.
 - `README.md` → apresenta o projeto e explica como instalar, executar e utilizar a API.
 - `marco-1.md` → contém a ficha de entrega e autopontuação do Marco 1.
 - `requirements.txt` → lista as dependências necessárias para instalar e executar o projeto.
@@ -113,7 +122,9 @@ Os dados são fornecidos pela **API de Localidades do IBGE** (Instituto Brasilei
 ├── testes/
 │   └── test_municipios.py
 ├── evidencias/
-│   └── README.md
+│   ├── README.md
+│   └── evidencias.csv
+├── diario-de-bordo.md
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
