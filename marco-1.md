@@ -27,7 +27,7 @@ Presença obrigatória nos três. **Marco perdido não se repõe com entrega por
 - **Marco e data:** Marco 1 — 04/10/2026
 - **Trilha:** A - API sobre municípios do Ceará com dados do IBGE:
 - **Endereço público do produto:** n.a. — publicação pública prevista para o Marco 3
-- **Commit ou tag desta entrega:** a definir (preenchido após o commit final)
+- **Commit ou tag desta entrega:** `c04d7b8`
 
 
 O endereço tem de abrir em outra máquina, sem a equipe por perto. O commit congela o que está sendo
