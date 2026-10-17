@@ -117,7 +117,7 @@ Os papéis poderão ser ajustados conforme as necessidades do projeto, sendo reg
 | Marco | Data | Entrega prevista |
 |---|---|---|
 | **Marco 1** | 04/11/2026 | Plano de ação definido e primeira versão funcional do produto |
-| **Marco 2** | 19/11/2026 | Produto funcionando de ponta a ponta e utilizável por alguém externo |
+| **Marco 2** | 20/11/2026 | Produto funcionando de ponta a ponta e utilizável por alguém externo |
 | **Marco 3** | 27/11/2026 | Produto documentado, publicado e evidências de uso coletadas |
 
 ### Planejamento
@@ -130,7 +130,7 @@ Os papéis poderão ser ajustados conforme as necessidades do projeto, sendo reg
 - Definir o produto mínimo;
 - Implementar a primeira versão do produto.
 
-**Até 19/11/2026**
+**Até 20/11/2026**
 - Finalizar a funcionalidade principal;
 - Realizar testes;
 - Permitir que alguém externo consiga utilizar o produto;
