@@ -26,3 +26,5 @@ Registro semanal das atividades da equipe. Cada entrada contém a data, os parti
 
 - Validar a API com usuários externos à UFC antes do Marco 2.
 - Avaliar inclusão de novos dados (população, indicadores) e melhorias de desempenho.
+
+  ## 13/11/2026 — MARCO 2
