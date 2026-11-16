@@ -56,7 +56,15 @@ uvicorn src.main:app --reload
 
 Documentação interativa disponível em http://127.0.0.1:8000/docs.
 
+## 🧪 Como rodar os testes
+
+```bash
+python -m pytest
+```
+
 ## 📡 Exemplo de chamada
+
+A API aceita apenas **códigos IBGE de 7 dígitos numéricos** de municípios do **Ceará**. Códigos de outros estados, inexistentes ou fora do padrão retornam erro `404`.
 
 ```bash
 curl http://127.0.0.1:8000/municipios/2304400
@@ -88,11 +96,12 @@ Os dados são fornecidos pela **API de Localidades do IBGE** (Instituto Brasilei
 
 ## ⚠️ Limitações
 
-- A API depende do serviço online do IBGE: se ele estiver indisponível, a API responde com erro **503**.
-- Aceita apenas consulta de **um município por vez**, pelo código IBGE de 7 dígitos. Não há busca por nome nem listagem dos municípios.
+- A API consulta apenas **municípios do Ceará**. Códigos válidos de outros estados retornam erro `404`.
+- Aceita somente **códigos IBGE de 7 dígitos numéricos**. Códigos fora desse padrão retornam `404` sem consultar o IBGE.
+- Não há busca por nome nem listagem dos municípios.
 - Retorna somente dados de localização (nome, microrregião, mesorregião, regiões e UF). Ainda **não** inclui população nem indicadores socioeconômicos.
+- Depende do serviço online do IBGE: se ele estiver indisponível, a API responde com erro **503**; falhas inesperadas podem retornar **502**.
 - Não há cache: cada requisição consulta o IBGE novamente, o que pode tornar respostas repetidas mais lentas.
-- Em caso de falha inesperada do serviço do IBGE, a resposta pode ser **502**.
 
 ## 📝 Como cada parte da estrutura funciona
 

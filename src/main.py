@@ -1,10 +1,12 @@
+import re
+
 import httpx
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI(
     title="API de Municípios do Ceará",
     description="API para consulta de dados públicos de municípios do Ceará.",
-    version="0.2.0",
+    version="0.3.0",
 )
 
 
@@ -18,6 +20,12 @@ def inicio():
 
 @app.get("/municipios/{codigo}")
 def consultar_municipio(codigo: str):
+    if not re.fullmatch(r"\d{7}", codigo):
+        raise HTTPException(
+            status_code=404,
+            detail="Código inválido. Informe um código IBGE com 7 dígitos numéricos."
+        )
+
     url = f"https://servicodados.ibge.gov.br/api/v1/localidades/municipios/{codigo}"
 
     try:
@@ -43,6 +51,12 @@ def consultar_municipio(codigo: str):
         )
 
     uf = dados["microrregiao"]["mesorregiao"]["UF"]
+
+    if uf["sigla"] != "CE":
+        raise HTTPException(
+            status_code=404,
+            detail="Município fora do estado do Ceará."
+        )
 
     return {
         "codigo": dados["id"],

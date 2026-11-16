@@ -1,0 +1,5 @@
+GET /municipios/abc
+HTTP 404
+{
+  "detail": "Código inválido. Informe um código IBGE com 7 dígitos numéricos."
+}

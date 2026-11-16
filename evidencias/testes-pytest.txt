@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-9.1.1, pluggy-1.6.0 -- /home/wanderson/projects/Projeto-Interfaces-de-Programa-o/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/wanderson/projects/Projeto-Interfaces-de-Programa-o
+plugins: anyio-4.15.1
+collecting ... collected 3 items
+
+testes/test_municipios.py::test_fortaleza_devolve_200 PASSED             [ 33%]
+testes/test_municipios.py::test_codigo_invalido_devolve_404 PASSED       [ 66%]
+testes/test_municipios.py::test_codigo_fora_do_ce_devolve_404 PASSED     [100%]
+
+=============================== warnings summary ===============================
+.venv/lib/python3.11/site-packages/fastapi/testclient.py:1
+  /home/wanderson/projects/Projeto-Interfaces-de-Programa-o/.venv/lib/python3.11/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 3 passed, 1 warning in 0.29s =========================

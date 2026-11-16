@@ -1,0 +1,5 @@
+GET /municipios/3304557
+HTTP 404
+{
+  "detail": "Município fora do estado do Ceará."
+}
