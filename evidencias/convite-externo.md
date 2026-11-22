@@ -34,3 +34,43 @@ Luiz Matheus e Wanderson
 
 Equipe CC0464 — UFC
 
+---
+
+## Registro dos usuários externos
+
+Registrar abaixo os contatos realizados e os retornos recebidos.
+
+### Usuário 1
+
+- Perfil:
+- Data do convite:
+- Canal de contato:
+- Testou a API?:
+- Data do teste:
+- Retorno recebido:
+
+### Usuário 2
+
+- Perfil:
+- Data do convite:
+- Canal de contato:
+- Testou a API?:
+- Data do teste:
+- Retorno recebido:
+
+### Usuário 3
+
+- Perfil:
+- Data do convite:
+- Canal de contato:
+- Testou a API?:
+- Data do teste:
+- Retorno recebido:
+
+---
+
+## Evidências dos contatos
+
+
+
+Os registros devem corresponder aos contatos e testes realmente realizados.
