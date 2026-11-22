@@ -38,11 +38,9 @@ Equipe CC0464 — UFC
 
 ## Registro dos usuários externos
 
-Registrar abaixo os contatos realizados e os retornos recebidos.
-
 ### Usuário 1
 
-- Perfil:
+- Perfil: 
 - Data do convite:
 - Canal de contato:
 - Testou a API?:
