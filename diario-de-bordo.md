@@ -86,8 +86,6 @@ Registro semanal das atividades da equipe. Cada entrada é adicionada **na seman
 
 **Próximos passos:**
 
-- Finalizar e revisar a documentação da API.
-- Registrar os prints dos convites enviados e dos retornos recebidos.
 - Atualizar as evidências de alcançabilidade e resultados no repositório.
 - Continuar acompanhando a utilização da API e avaliar possíveis melhorias.
 - Consolidar o diário de bordo e preparar a entrega final do projeto.
