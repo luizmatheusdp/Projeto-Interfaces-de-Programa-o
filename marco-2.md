@@ -108,7 +108,6 @@ Marque `n.a.` na dimensão que ainda não tem como existir. A nota é `10 × pon
 | D4 Registro do processo | | 2 | Diário de bordo, evidências dos convites e feedbacks registrados. |
 | D5 Autoavaliação e reflexão | | 2 | Dificuldades identificadas e melhorias planejadas com base nos retornos dos usuários. |
 
-**Nota sugerida:** `10 × 10 / 10 = 10`
 
 ## Antes de entregar
 
