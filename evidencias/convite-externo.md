@@ -40,35 +40,30 @@ Equipe CC0464 — UFC
 
 ### Usuário 1
 
-- Perfil: 
-- Data do convite:
-- Canal de contato:
-- Testou a API?:
-- Data do teste:
-- Retorno recebido:
+- Perfil: Comerciante.
+- Data do convite: 22/11/2026.
+- Canal de contato: WhatsApp.
+- Testou a API?: SIM
+- Data do teste: 22/11/2026
+- Retorno recebido: Muito complexo de entender como funciona 
 
 ### Usuário 2
 
-- Perfil:
-- Data do convite:
-- Canal de contato:
-- Testou a API?:
-- Data do teste:
-- Retorno recebido:
+- Perfil: Auxiliar de depósito
+- Data do convite: 22/11/2026.
+- Canal de contato: WhatsApp.
+- Testou a API?: Sim
+- Data do teste: 22/11/2026
+- Retorno recebido:  Conseguiu acessar a API sem dificuldades. e sugeriu que o clima do município pesquisado também aparecesse      
 
 ### Usuário 3
 
-- Perfil:
-- Data do convite:
-- Canal de contato:
-- Testou a API?:
-- Data do teste:
-- Retorno recebido:
+- Perfil: Comerciante.
+- Data do convite: 22/11/2026.
+- Canal de contato: WhatsApp.
+- Testou a API?:SIM
+- Data do teste:22/11/2026.
+- Retorno recebido:- Está bem feito e funcional, mas ficou faltando uma documentação completa para guiar o usuário da API, com todos endpoints e parâmetros (além da documentação de uso)
 
 ---
 
-## Evidências dos contatos
-
-
-
-Os registros devem corresponder aos contatos e testes realmente realizados.
