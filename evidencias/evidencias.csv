@@ -10,9 +10,9 @@ data,tipo,indicador,canal,quem_de_fora,valor,descricao,arquivo
 2026-11-13,Formação,Formação acadêmica,-,-,1,"README com comando python -m pytest e documentação coerente com a API",README.md
 2026-11-13,Formação,Formação acadêmica,-,-,1,"Fonte de dados documentada (URL, termos e periodicidade)",dados/README.md
 2026-11-13,Alcance,Alcançabilidade,-,-,0,Contato iniciado com os 3 usuários externos — aguardando retorno,evidencias/convite-externo.md
-2026-11-22,Alcance,Alcançabilidade,WhatsApp,Participante 1,1,Convite enviado para teste da API,evidencias/prints/convite-01.png
-2026-11-22,Alcance,Alcançabilidade,WhatsApp,Participante 2,1,Convite enviado para teste da API,evidencias/prints/convite-02.png
-2026-11-22,Alcance,Alcançabilidade,WhatsApp,Participante 3,1,Convite enviado para teste da API,evidencias/prints/convite-03.png
+2026-11-22,Alcance,Alcançabilidade,WhatsApp,Usuário 1,1,Convite enviado para teste da API,evidencias/prints/convite-01.png
+2026-11-22,Alcance,Alcançabilidade,WhatsApp,Usuário 2,1,Convite enviado para teste da API,evidencias/prints/convite-02.png
+2026-11-22,Alcance,Alcançabilidade,WhatsApp,Usuário 3,1,Convite enviado para teste da API,evidencias/prints/convite-03.png
 2026-11-22,Alcance,Retorno qualitativo,WhatsApp,Usuário 1,1,"Muito complexo de entender como funciona",evidencias/convite-externo.md
 2026-11-22,Alcance,Retorno qualitativo,WhatsApp,Usuário 2,1,"sugeriu que o clima do município pesquisado também aparecesse ",evidencias/convite-externo.md
 2026-11-22,Alcance,Retorno qualitativo,WhatsApp,Usuário 3,1,"ficou faltando uma documentação completa para guiar o usuário da API, com todos endpoints e parâmetros",evidencias/convite-externo.md
