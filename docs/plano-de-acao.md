@@ -118,7 +118,7 @@ Os papéis poderão ser ajustados conforme as necessidades do projeto, sendo reg
 |---|---|---|
 | **Marco 1** | 13/10/2026 | Plano de ação definido e primeira versão funcional do produto |
 | **Marco 2** | 15/11/2026 | Produto funcionando de ponta a ponta e utilizável por alguém externo |
-| **Marco 3** | 27/11/2026 | Produto documentado, publicado e evidências de uso coletadas |
+| **Marco 3** | 29/11/2026 | Produto documentado, publicado e evidências de uso coletadas |
 
 ### Planejamento
 
@@ -137,7 +137,7 @@ Os papéis poderão ser ajustados conforme as necessidades do projeto, sendo reg
 - Atualizar a documentação;
 - Registrar os primeiros resultados de uso.
 
-**Até 27/11/2026**
+**Até 29/11/2026**
 - Publicar a versão final;
 - Finalizar a documentação;
 - Coletar as evidências;
